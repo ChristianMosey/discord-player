@@ -27,7 +27,7 @@ class Queue<T = unknown> {
     public tracks: Track[] = [];
     public previousTracks: Track[] = [];
     public options: PlayerOptions;
-    public playing = true;
+    public playing = false;
     public metadata?: T | null = null;
     public repeatMode: QueueRepeatMode = 0;
     public readonly id = SnowflakeUtil.generate().toString();

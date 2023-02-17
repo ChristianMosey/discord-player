@@ -953,6 +953,7 @@ class Queue<T = unknown> {
             disableBiquad: Boolean(this.options.disableBiquad),
             biquadFilter: this._lastBiquadFilter
         });
+        this.playing == true;
 
         if (options.seek) this._streamTime = options.seek;
         this._filtersUpdate = options.filtersUpdate!;
